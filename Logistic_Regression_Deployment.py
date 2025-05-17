@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-with open('titanic_model.pkl', 'rb') as file:
+with open('Titanic_model.pkl', 'rb') as file:
     titanic_logr_model = pickle.load(file)
     
 def prediction(Pclass, Sex, Age, SibSp, Parch, Fare, Embarked):
